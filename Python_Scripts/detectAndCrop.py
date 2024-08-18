@@ -15,7 +15,7 @@ def detect_and_crop(image_path):
     image = cv2.imread(image_path)
 
     # Load the YOLOv8 model
-    model = YOLO('Models/potholeTrained.pt')  # You can use a different YOLOv8 model if needed
+    model = YOLO('C:/Users/mgshe/Documents/altF4_patch_perfect_hackathon/Models/potholeTrained.pt')  # You can use a different YOLOv8 model if needed
 
     # Detect objects in the image
     results = model(image)

@@ -4,12 +4,11 @@ import joblib
 import os
 
 # Load your data
-data = pd.read_csv('../../CSV_Files/combined.csv')
+data = pd.read_csv('C:/Users/mgshe/Documents/altF4_patch_perfect_hackathon/CSV_Files/combined.csv')
 
 # Define your features and target
-X = data[['pothole_area']]
-y = data['tar_bags']
-
+X = data.iloc[:,[4]]
+y = data.iloc[:,3]
 # Initialize and fit the model
 model = MLPRegressor(hidden_layer_sizes=(100, 100), max_iter=500)
 model.fit(X, y)

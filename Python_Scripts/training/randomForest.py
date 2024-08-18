@@ -4,11 +4,11 @@ import joblib
 import os
 
 # Load your data
-data = pd.read_csv('your_data.csv')
+data = pd.read_csv('C:/Users/mgshe/Documents/altF4_patch_perfect_hackathon/CSV_Files/combined.csv')
 
 # Define your features and target
-X = data[['pothole_area']]
-y = data['tar_bags']
+X = data.iloc[:,[4]]
+y = data.iloc[:,3]
 
 # Initialize and fit the model
 model = RandomForestRegressor(n_estimators=100)

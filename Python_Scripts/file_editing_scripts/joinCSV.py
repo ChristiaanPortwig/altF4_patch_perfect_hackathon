@@ -1,7 +1,7 @@
 import pandas
 
-BAGSUSEDPATH = "./train_labels.csv"
-AREAPATH = "./areaAdded.csv"
+BAGSUSEDPATH = "C:/Users/mgshe/Documents/altF4_patch_perfect_hackathon/CSV_Files/train_labels.csv"
+AREAPATH = "C:/Users/mgshe/Documents/altF4_patch_perfect_hackathon/CSV_Files/areaAdded.csv"
 
 #Converts csv files to dataframes
 bags_df = pandas.read_csv(BAGSUSEDPATH)
