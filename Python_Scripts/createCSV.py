@@ -4,7 +4,7 @@ from getTrueAreaOfPixel import getTrueAreaOfPixel
 from michaelScriptMockup import getPixels
 import pandas as pd
 
-PATH = "../../train_images"
+PATH = "training/train_images"
 
 df = pd.DataFrame({
     "Pothole number": [],
@@ -27,7 +27,7 @@ for file in os.listdir(PATH):
     truePotholeArea = areaOfPixel * pixelsInPothole
 
     df = pd.concat([df, pd.DataFrame({
-        "Pothole number": [file.removesuffix(".jpg").removeprefix("p")],
+        "Pothole number": [file.replace(".jpg","").replace("p","")],
         "area": [truePotholeArea]
     })], ignore_index=True)
     
