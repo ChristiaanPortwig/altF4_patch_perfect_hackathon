@@ -1,4 +1,5 @@
 import cv2
+import math
 
 def getPixels(croppedImage):
     """
@@ -12,4 +13,6 @@ def getPixels(croppedImage):
     #TODO: Implement Michael's code to get a more accurate representation of the area of the pothole
     width, height, channels = croppedImage.shape
 
-    return width * height
+    area = math.pi * (width//2) * (height//2)
+
+    return area
