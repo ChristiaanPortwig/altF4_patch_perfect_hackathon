@@ -34,7 +34,6 @@ for file in os.listdir(PATH):
 
     # Predict the output using the model
     predicted_value = model.predict([[truePotholeArea]])
-
     p = abs(predicted_value[0])
 
     df = pd.concat([df, pd.DataFrame({
