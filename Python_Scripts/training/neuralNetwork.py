@@ -4,7 +4,7 @@ import joblib
 import os
 
 # Load your data
-data = pd.read_csv('your_data.csv')
+data = pd.read_csv('../../CSV_Files/combined.csv')
 
 # Define your features and target
 X = data[['pothole_area']]

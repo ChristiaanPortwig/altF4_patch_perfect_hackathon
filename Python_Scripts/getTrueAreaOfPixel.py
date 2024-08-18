@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 
+#The actual width of the measuring stick in mm
 ACTUALWIDTH = 30
 
 #TODO: Change fixed value about actual width of stick!!!!
